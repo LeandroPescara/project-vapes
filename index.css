@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'roboto' , sans-serif;
+    margin:0px;
+}
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    color:white;
+    background-color:#03760c;
+}
+
+button:hover{
+    background-color: #006400;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color:#000173;
+}
+
+header{
+    background-color: rgba(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #000173;
+    font-size: 1.7em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+header a:hover{
+    color: #000173;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(resources/index-vape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+#aboutus{
+    background-color: #0e0e0e;
+    color: aliceblue;
+}
+
+#aboutus .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+
+#contacto {
+    text-align: center;
+    padding: 50px 12px;
+    background-color: #fbfbfb;
+    height: 100%; 
+}
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #000173;
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #000173; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+
+}
+
+#contacto button{
+    text-align: center;
+    font-size: 1.75em;
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	
+	text-transform: uppercase;
+	background-color: #000173; 
+	border-color: #000173; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+span{
+	color: #000173; 
+}
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+#contacto h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #000173;
+}
+
+
+#contacto h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+#contacto  p{
+	font-size: 15px; 
+	color: white; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+#contacto input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+#contacto textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
+#aboutus .container{
+    display: flex;
+    justify-content: center;
+}
+
+#aboutus .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+
+}
+
+#aboutus .img-teamwork{
+    background-image: url("resources/teamwork.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
